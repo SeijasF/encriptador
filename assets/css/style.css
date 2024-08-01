@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+:root{
+    --color-fondo: #000000;
+    --color-titulo: #FFFFFF;
+    --color-borde: #059212;
+    --color-boton: #92C7CF;
+    --sombras: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
+    0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+
+    --fuente-Expletus: "Expletus Sans", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente-Expletus);
+}
+
+body{
+    background-color: var(--color-fondo);
+}
+
+.encabezado{
+    padding: 2rem 0 4rem 2rem;
+}
+
+.encabezado__titulo{
+    color: var(--color-titulo);
+    text-shadow: var(--sombras)
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seccionMensaje{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10rem;
+}
+
+.seccionMensaje__input{
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-style: none;
+    outline-color: var(--color-borde);
+}
+
+.seccionMensaje__contenedor{
+    width: 100%;
+}
+
+.seccionMensaje__info{
+    color: var(--color-titulo);
+    text-shadow: var(--sombras);
+}
+
+.btn{
+    width: 45%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-style: none;
+    font-weight: 600;
+    background-color: var(--color-boton);
+}
+
+.seccionImagen{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.seccionImagen__img{
+    width: 80%;
+}
+
+.seccionImagen__textarea{
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline-color: var(--color-borde);
+}
