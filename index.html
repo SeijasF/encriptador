@@ -14,19 +14,21 @@
         <section class="mensaje">
             <div class="contenedor">
                 <textarea class="mensajeUsuario" rows="2" cols="15" placeholder="Ingrese el mensaje aquí.."></textarea>
-                <button class="btnNuevo">Nuevo Mensaje</button>
+                <button class="btnNuevo" onclick="reiniciarEncriptador()">Nuevo Mensaje</button>
             </div>
-            <div>
-                <img class="imagenInfo" src="/assets/img/Frame 1.png" alt="Solo letras minúsculas y sin acentos">   
-                <button class="btnEncriptar" onclick="encriptar()">Encriptar</button>
-                <button class="btnDesencriptar">Desencriptar</button>
-            </div> 
+            <div class="contenedor_btns">
+                <img class="imagenInfo" src="/assets/img/Frame 1.png" alt="Solo letras minúsculas y sin acentos">
+                <div>
+                    <button class="btnEncriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="btnDesencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>   
+                </div> 
         </section>
         <section class="encriptado">
             <textarea class="mensajeEncriptado" rows="2" cols="15"></textarea>
-            <img class="imagen" src="/assets/img/gatoLupa.jpg" alt="Imagen Capybara">
+            <img class="imagen" src="/assets/img/gatoLupa.jpg" alt="Imagen de gato con lupa">
             <img class="imagenTexto" src="/assets/img/Frame 5.png" alt="Ningún mensaje fue encontrado">
-            <button class="btnCopiar copiar">Copiar</button>
+            <button class="btnCopiar copiar" onclick="copiarMensaje()">Copiar</button>
         </section>
     </main>
     <script src="code.js"></script>
