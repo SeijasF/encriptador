@@ -22,6 +22,7 @@ let imagenTexto = document.querySelector('.imagenTexto');
 
  function encriptarMensaje(msg) {
     const matrizCodigo = [["e","enter"], ["i","imes"], ["a","ai"], ["o","ober"], ["u","ufat"]];
+    msg = msg.toLowerCase();
     for(i=0; i < matrizCodigo.length; i++){
         if(msg.includes(matrizCodigo[i][0])){
             msg = msg.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1])
